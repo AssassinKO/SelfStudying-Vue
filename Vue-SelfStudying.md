@@ -1,4 +1,4 @@
-2021-09-03
+﻿2021-09-03
 
 Class and Style Bindings
 v-bind is used with class and style.
@@ -35,3 +35,4 @@ Conditional rendering.
 <h1 v-else>Oh no 😢</h1>
 v-if vs v-for
 <h1 v-if="awesome" v-for="OK">Vue is awesome!</h1>
+2021-09-13
