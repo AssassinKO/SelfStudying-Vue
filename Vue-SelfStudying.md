@@ -1,4 +1,4 @@
-﻿2021-09-03
+2021-09-03
 
 Class and Style Bindings
 v-bind is used with class and style.
@@ -32,7 +32,24 @@ Array
 2021-09-06
 Conditional rendering.
 <h1 v-if="awesome">Vue is awesome!</h1>
-<h1 v-else>Oh no 😢</h1>
+<h1 v-else>Oh no </h1>
 v-if vs v-for
 <h1 v-if="awesome" v-for="OK">Vue is awesome!</h1>
-2021-09-13
+2021-09-16
+-Event Modifiers
+.stop
+.prevent
+.capture
+.self
+.once
+.passive
+EX: <a v-on:click.stop="doThis"></a>
+-Key Modifiers
+EX: <input v-on:keyup.enter="submit">
+define custom key modifier aliases
+EX: Vue.config.keyCodes.f1 = 112
+<!-- Alt + C -->
+<input v-on:keyup.alt.67="clear">
+
+<!-- Ctrl + Click -->
+<div v-on:click.ctrl="doSomething">Do something</div>
