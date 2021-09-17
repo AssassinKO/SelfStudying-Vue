@@ -53,3 +53,9 @@ EX: Vue.config.keyCodes.f1 = 112
 
 <!-- Ctrl + Click -->
 <div v-on:click.ctrl="doSomething">Do something</div>
+2021-09-17
+Form Input Bindings
+v-model property
+-text and textarea elements use value property and input event;
+-checkboxes and radiobuttons use checked property and change event;
+-select fields use value as a prop and change as an event.
