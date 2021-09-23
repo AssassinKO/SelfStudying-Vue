@@ -8,4 +8,3 @@ v-on[eventName]="dosomething"    ==    v-on:focus = "dosomething" (eventName="fo
 v-on:submit.prevent="onSubmit"    =>       event.preventDefault()
 :href="", :id="", :[key]="" (v-bind)
 @click="dosomething", @[key]="dosomething"  (v-on)
---2021-09-23--
