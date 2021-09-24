@@ -8,3 +8,12 @@ v-on[eventName]="dosomething"    ==    v-on:focus = "dosomething" (eventName="fo
 v-on:submit.prevent="onSubmit"    =>       event.preventDefault()
 :href="", :id="", :[key]="" (v-bind)
 @click="dosomething", @[key]="dosomething"  (v-on)
+--2021-09-24--
+Data Properties
+const app = Vue.createApp({
+  data() {
+    return { count: 4 }
+  }
+})
+
+vm.count = 5
