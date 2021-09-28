@@ -101,3 +101,26 @@ v-for with v-if
     {{ todo.name }}
   </li>
 </template>
+--2021-09-28--
+Event Handling
+Form Input Bindings
+<div id="v-model-select-dynamic" class="demo">
+  <select v-model="selected">
+    <option v-for="option in options" :value="option.value">
+      {{ option.text }}
+    </option>
+  </select>
+  <span>Selected: {{ selected }}</span>
+</div>
+Vue.createApp({
+  data() {
+    return {
+      selected: 'A',
+      options: [
+        { text: 'One', value: 'A' },
+        { text: 'Two', value: 'B' },
+        { text: 'Three', value: 'C' }
+      ]
+    }
+  }
+}).mount('#v-model-select-dynamic')
