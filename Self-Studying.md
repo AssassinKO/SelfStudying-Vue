@@ -124,3 +124,5 @@ Vue.createApp({
     }
   }
 }).mount('#v-model-select-dynamic')
+--2021-09-29--
+Props in Vue.js
